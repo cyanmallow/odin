@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Sun: Contact - Sea Export</title>
+    <script src="index.js""></script>
+    <style src="style.css"></style>
+  </head>
+
+  <body>
+
+    <fieldset>
+      <legend>Contact Details</legend>
+      <form action="google.com/path" method="post">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" placeholder="Bill Bob Johns" required>
+        <br>
+        <label for="email">*Email address:</label>
+        <input type="email" id="email" name="email" placeholder="a@example.com" required>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Shipment Details</legend>
+
+      <!-- use optgroup to seperate typesof cont -->
+      <label for="cont">Container:</label>
+      <select name="cont">
+        <option value="cont20" selected>Cont 20</option>
+        <option value="cont40">Cont 40</option>
+        <option value="cont60">Cont 60</option>
+      </select><br>
+
+      <label for="from">From:</label>
+      <select name="from">
+        <option value="haiphong" selected>Hai Phong</option>
+        <option value="hcm">Ho Chi Minh City</option>
+      </select><br>
+
+      <label for="to">To:</label>
+      <select name="to">
+        <option value="pasirgudang" selected>Pasir Gudang</option>
+        <option value="sin">Singapore</option>
+      </select><br>
+
+      <textarea rows="10" cols="40">Comment:</textarea>
+    </fieldset>
+    <br>
+
+      <div>
+        <input type="checkbox" id="additional_email" name="additional_email">
+        <label for="additional_email">Additional email</label>
+      </div>
+      <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>

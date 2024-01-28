@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Sun: Sign up</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+  <body>
+
+    <div class="left">
+      <h1>GLOBAL SUN</h1>
+      <img src="C:\Users\Dell\Downloads\Ảnh_chụp_màn_hình_2024-01-28_180520-removebg-preview.png" alt="gs logo">
+
+    </div>
+
+  <div class="text">
+    <h1>This is not a real online service! You know you need something<br>like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.<br><br>You <em>know</em> you want to.</em></h1>
+    <br><br><br>
+
+    <h1>Let's do this!</h1><br>
+
+    <table class='myFormat'>
+      <tr>
+        <td>
+          <label for="firstname">FIRST NAME</label>
+        </td>
+
+        <td>
+          <label for="lastname">LAST NAME</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" id="firstname" name="firstname" placeholder="Thor" required maxlength="10">
+        </td>
+
+        <td>
+          <input type="text" id="lastname" name="lastname" placeholder="Odinson" required maxlength="10">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="email">EMAIL</label>
+        </td>
+
+        <td>
+          <label for="phone">PHONE NUMBER</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="email" id="email" name="email" required maxlength="30">
+        </td>
+
+        <td>
+          <input type="text" id="phone" name="phone" required maxlength="11">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="password">PASSWORD</label>
+        </td>
+
+        <td>
+          <label for="password2">CONFIRM PASSWORD</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="password" id="password" name="password" required minlength="6" maxlength="25">
+        </td>
+
+
+        <!-- check repeat pw does not work mf -->
+        <td>
+          <input type="password" id="password2" name="password2"  required minlength="6" maxlength="25"
+          onkeyup="check();">
+        </td>
+      </tr>
+    </table>
+
+    <form action="login.html" method="post">
+      <br>
+      <button class="button" type="submit">Create Account</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+
+
+  </body>
+</html>
