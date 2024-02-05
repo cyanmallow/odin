@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
     <title>Recipes</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template: repeat(2, 100px)/repeat(5, 100px);
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+
+      .container > div {
+        border: 1px solid black;
+        background-color: rgb(255, 244, 118);
+        text-emphasis-color: blue;
+        text-align: center;
+      }
+
+    </style>
   </head>
 
   <body>
     <h1>Odin recipes</h1>
 
-    <a href="recipes/lasagna.html">Lasagna</a><br>
-    <a href="recipes/cake.html">Cake</a><br>
-    <a href="recipes/pizza.html">Pizza</a><br>
+    <div class="container">
+      <div><a href="recipes/lasagna.html">lasagna</a></div>  
+      <div><a href="recipes/cake.html">cake</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
+      <div><a href="recipes/pizza.html">pizza</a></div>  
 
-    <div class="flex-container"></div>
+
+    </div>
   </body>
