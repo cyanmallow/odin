@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ginger's bookshelf</title>
+    </head>
+
+    <body>
+        <script src='script.js'></script>
+        
+        <div id="bookList"></div>
+
+        <fieldset>
+            <input type="text" id="title" placeholder="Book's name">
+            <br>
+            <input type="text" id="author" placeholder="Author's name">
+            <br>
+
+            <label>
+                <input type="radio" name="read" value="option1">
+                Read
+            </label>
+            <label>
+                <input type="radio" name="read" value="option2">
+                Not read
+            </label>
+            <br>
+
+            
+            <button type="button" onclick="addBook()">Add</button>
+        </fieldset>
+
+        Current books on shelf:
+        <ul id="books"></ul>
+        <button type="button" onclick="removeBook()">Remove</button>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            // Display books already on shelf
+            displayBook(proSeka);
+            displayBook(ak);
+            displayBook(nuC);
+            displayBook(tgcf);
+            });
+        </script>
+    </body>
+</html>
