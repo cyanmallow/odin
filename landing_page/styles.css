@@ -14,15 +14,15 @@
     margin: 0;
     padding: 20px;
 }
-
-.flexbox .logo h4 {
+.flexbox .logo h3 {
     margin-right: auto;
 }
-
 .flexbox .logo a{
     margin-left: 40px;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-decoration: none;
 }
 
 .flexbox .introduction{
@@ -32,45 +32,78 @@
     margin: 0;
     padding: 20px;
 }
-
 .flexbox .introduction h1, p, button{
     margin-left: 2px;
+    color: white;
 }
-
 .flexbox .introduction img{
     margin-right: 20px;
 }
-
 .flexbox .introduction button{
     background-color: rgb(42, 149, 255);
 }
+.website_awesome{
+    font-size: 30px;
+}
 
-
+.random_info {
+    text-align: center;
+    font-size: 18px;
+}
 .flexbox .info .pic-container {
     display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+}
+.flexbox .info .pic {
+    text-align: center; /* Center the content inside the pic */
+    margin: 0 auto; /* Center the pic container horizontally */
 }
 
-.flexbox .info .pic-container p {
-    align-items: center;
-    justify-content: center;
-    align-self: center;
+.flexbox .info .pic-container .pic p{
+    color: black;
 }
 
-.flexbox .info .pic-container pic {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .flexbox .quote {
     display: flex;
+    background-color: rgb(223, 220, 220);
+    flex-direction: column;
 }
-.flexbox .quote p1{
-    margin-left: 180px;
-    margin-top: 80px;
-    margin-right: 180px;
+.random_quote{
     text-align: center;
-}
-.flexbox .quote p2{
+    color: black;
+    margin-top: 20px;
+    margin-left: 100px;
     margin-right: 100px;
-    margin-top: 130px;
+    font-size: 23px;
+}
+.quote_author{
+    text-align: right;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.flexbox .click_me {
+    display: flex;
+    margin: 50px 150px 50px 200px ;
+    background-color: rgb(42, 149, 255);
+}
+.flexbox .click_me button{
+    background-color: rgb(42, 149, 255);
+    color: white;
+    margin-left: 50px;
+    border: 1px solid white;
+    padding: 5px 10px; /* Adjust padding to make the button shorter */
+}
+
+.flexbox .copyright p{
+    background-color: rgb(14, 14, 86);
+    color: white;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
 }
