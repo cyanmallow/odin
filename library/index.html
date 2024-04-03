@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Baby's library</title>
+    </head>
+
+    <body>
+        <table id="bookshelf">
+            <tr>
+                <th id="stt">STT</th>
+                <th id="name">Name</th>
+                <th id="author">Author</th>
+                <th id="read">Read yet?</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ProSeka</td>
+                <td>Colorful Pallette</td>
+                <td><button id="toggleBtn">Yes</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ProSeka</td>
+                <td>Colorful Pallette</td>
+                <td><button id="toggleBtn">No</button></td>
+            </tr>
+        </table>
+
+        <dialog id="addBookDialog">
+            <form method="dialog">
+                <p>
+                    <label>
+                        Name:
+                        <input type="text" name="name" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Author:
+                        <input type="text" name="author"  required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Read:
+                        <input type="radio" name="read" value="Yes">
+                        Read
+                        <input type="radio" name="read" value="No">
+                        Not read
+                    </label>
+                </p>
+
+                <div>
+                    <input type="submit" id="submit" value="Submit" />
+                </div>
+            </form>
+        </dialog>
+
+        <p>
+            <button id="add-books">Add</button>
+        </p>
+        <script src="script.js"></script>
+    </body>
+</html>

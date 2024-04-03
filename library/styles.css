@@ -1,0 +1,27 @@
+#bookshelf {
+    outline: 1px solid black;
+}
+
+th {
+    background-color: aqua;
+    outline: 1px solid black;
+
+}
+td {
+    outline: 1px solid black;
+    align-items: center;
+    text-align: center;
+}
+
+#stt {
+    width: 50px;
+}
+#name {
+    width: 180px;
+}
+#author {
+    width: 180px;
+}
+#read {
+    width: 120px;
+}
